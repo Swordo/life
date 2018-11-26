@@ -14,21 +14,8 @@ window.onload = function () {
             var tCol = document.createElement('TD');
             tRow.appendChild(tCol);
             tCol.innerHTML = count;
-            tCol.addEventListener('click', function mulValues() {
-                var num1 = [];
-                for (var o = 1; o <= 100; o++) {
-                    if (o % this.innerHTML == 0)
-                        num1.push(o);
-                }
-                var star = document.getElementsByTagName('td');
-                for (var m = 0; m < 100; m++) {
-                    for (var n = 0; n < num1.length; n++) {
-                        if (star[m].innerHTML == num1[n])
-                            star[m].innerHTML = " * ";
-                    }
-                }
-            }
-            );
+
+
             count++;
         }
     }
